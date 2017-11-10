@@ -7,8 +7,8 @@ import (
 )
 
 var (
-	tablename = "bookstate"
-	conn, _   = dbr.Open("mysql", "username:api@/book_api", nil)
+	tablename = "test"
+	conn, _   = dbr.Open("mysql", "username:api@/book_db", nil)
 	sess      = conn.NewSession(nil)
 )
 
