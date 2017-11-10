@@ -16,11 +16,11 @@ func main() {
 	e := echo.New()
 
 	// Routing
-	e.GET("/book/api/fetch/:title", PullBookInfo)
-	e.GET("/book/api/fetch/all", PullBooksInfo)
-	e.PUT("/book/api/update", UpdateBookInfo)
-	e.POST("/book/api/post", PostBookInfo)
-	e.DELETE("/book/api/delete/:id", DeleteBookInfo)
+	e.GET("/book/api/fetch/:title", Pullbook)
+	e.GET("/book/api/fetch/all", Pullbooks)
+	e.PUT("/book/api/update", Updatebook)
+	e.POST("/book/api/post", Postbook)
+	e.DELETE("/book/api/delete/:id", Deletebook)
 
 	e.Logger.Fatal(e.Start(":9090"))
 }
